@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بوابة التوظيف - مؤسسة أفق للتنمية وبناء القدرات</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+              950: '#172554',
+            },
+            accent: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f8fafc;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between selection:bg-brand-600 selection:text-white">
+
+  <!-- Header Section -->
+  <header class="bg-white border-b border-slate-200/90 sticky top-0 z-30 shadow-sm backdrop-blur-md bg-white/95">
+    <div class="max-w-5xl mx-auto px-4 py-3.5 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <!-- Brand Logo Icon -->
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-900 via-brand-700 to-accent-600 flex items-center justify-center text-white shadow-md shadow-brand-900/20">
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-lg md:text-xl font-extrabold text-slate-900 leading-tight">مؤسسة أُفُق للتنمية وبناء القدرات</h1>
+          <p class="text-xs md:text-sm text-slate-500 font-medium">Ofuq Foundation for Development & Capacity Building</p>
+        </div>
+      </div>
+
+      <!-- Status Badge -->
+      <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>بوابة التقديم مفتوحة</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Workspace -->
+  <main class="max-w-4xl mx-auto w-full px-4 py-8 flex-grow">
+
+    <!-- Applicant Form View -->
+    <div id="applicantFormView" class="space-y-6">
+
+      <!-- Hero Banner Card -->
+      <div class="bg-gradient-to-r from-brand-950 via-brand-900 to-brand-800 rounded-3xl p-6 md:p-9 text-white shadow-xl relative overflow-hidden">
+        <div class="absolute -right-16 -top-16 w-56 h-56 bg-accent-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute left-10 -bottom-10 w-44 h-44 bg-brand-500/20 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="relative z-10 space-y-3 max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-bold text-accent-200">
+            <span class="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
+            استقطاب وتوظيف الكفاءات لعام 2026
+          </div>
+          <h2 class="text-2xl md:text-3xl font-black text-white leading-tight">طلب الالتحاق بفريق مؤسسة أفق</h2>
+          <p class="text-slate-200 text-xs md:text-sm leading-relaxed font-normal">
+            نؤمن في مؤسسة أفق بأن الاستثمار في الطاقات البشرية هو جوهر التنمية المستدامة. إذا كنت تمتلك الشغف والخبرة في العمل التنموي وبناء قدرات المجتمع، يسعدنا استقبال طلب انضمامك.
+          </p>
+        </div>
+      </div>
+
+      <!-- Stepper Header Card -->
+      <div class="bg-white rounded-2xl p-4 md:p-6 border border-slate-200/90 shadow-sm">
+        <div class="flex items-center justify-between relative px-2 md:px-6">
+          <!-- Continuous Track -->
+          <div class="absolute top-1/2 -translate-y-1/2 right-8 left-8 h-1 bg-slate-200 -z-0">
+            <div id="stepProgressBar" class="h-full bg-brand-600 transition-all duration-300" style="width: 0%;"></div>
+          </div>
+
+          <!-- Step 1 Button -->
+          <div class="flex flex-col items-center relative z-10 group cursor-pointer" onclick="goToStep(1)">
+            <div id="stepIcon1" class="w-10 h-10 rounded-2xl flex items-center justify-center font-extrabold text-sm border-2 border-brand-600 bg-brand-600 text-white shadow-md shadow-brand-600/30 transition">
+              1
+            </div>
+            <span class="text-xs font-bold text-slate-700 mt-2 hidden md:block">البيانات الشخصية</span>
+          </div>
+
+          <!-- Step 2 Button -->
+          <div class="flex flex-col items-center relative z-10 group cursor-pointer" onclick="goToStep(2)">
+            <div id="stepIcon2" class="w-10 h-10 rounded-2xl flex items-center justify-center font-extrabold text-sm border-2 border-slate-300 bg-white text-slate-500 shadow-sm transition">
+              2
+            </div>
+            <span class="text-xs font-bold text-slate-700 mt-2 hidden md:block">المؤهلات والخبرات</span>
+          </div>
+
+          <!-- Step 3 Button -->
+          <div class="flex flex-col items-center relative z-10 group cursor-pointer" onclick="goToStep(3)">
+            <div id="stepIcon3" class="w-10 h-10 rounded-2xl flex items-center justify-center font-extrabold text-sm border-2 border-slate-300 bg-white text-slate-500 shadow-sm transition">
+              3
+            </div>
+            <span class="text-xs font-bold text-slate-700 mt-2 hidden md:block">الوظيفة والمهارات</span>
+          </div>
+
+          <!-- Step 4 Button -->
+          <div class="flex flex-col items-center relative z-10 group cursor-pointer" onclick="goToStep(4)">
+            <div id="stepIcon4" class="w-10 h-10 rounded-2xl flex items-center justify-center font-extrabold text-sm border-2 border-slate-300 bg-white text-slate-500 shadow-sm transition">
+              4
+            </div>
+            <span class="text-xs font-bold text-slate-700 mt-2 hidden md:block">المرفقات والإقرار</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Application Form Element -->
+      <form id="employmentForm" class="space-y-6" novalidate>
+
+        <!-- ================= STEP 1: PERSONAL INFORMATION ================= -->
+        <div id="stepSection1" class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200/90 shadow-sm space-y-6">
+          <div class="border-b border-slate-100 pb-4 flex items-center justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900 flex items-center gap-2">
+                <span class="w-2.5 h-6 bg-brand-600 rounded-full"></span>
+                الخطوة الأولى: البيانات الشخصية والتواصل
+              </h3>
+              <p class="text-xs text-slate-500 mt-1">المعلومات الأساسية اللازمة للتحقق من هوية مقدم الطلب</p>
+            </div>
+            <span class="text-xs bg-brand-50 text-brand-700 font-bold px-3 py-1 rounded-full border border-brand-200">مرحلة 1 من 4</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- Full Name -->
+            <div class="md:col-span-2">
+              <label for="fullName" class="block text-sm font-bold text-slate-700 mb-1.5">
+                الاسم الرباعي حسب بطاقة الهوية <span class="text-rose-500">*</span>
+              </label>
+              <input type="text" id="fullName" name="fullName" required placeholder="مثال: يوسف محمود خليل حماد" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm">
+              <p class="text-xs text-rose-500 hidden mt-1" id="err-fullName">يرجى كتابة الاسم الرباعي كاملاً</p>
+            </div>
+
+            <!-- ID / Passport -->
+            <div>
+              <label for="nationalId" class="block text-sm font-bold text-slate-700 mb-1.5">
+                رقم الهوية الوطنية / جواز السفر <span class="text-rose-500">*</span>
+              </label>
+              <input type="text" id="nationalId" name="nationalId" required placeholder="أدخل رقم الهوية (9 أرقام)" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm">
+              <p class="text-xs text-rose-500 hidden mt-1" id="err-nationalId">يرجى إدخال رقم هوية صالح</p>
+            </div>
+
+            <!-- Birth Date -->
+            <div>
+              <label for="dob" class="block text-sm font-bold text-slate-700 mb-1.5">
+                تاريخ الميلاد <span class="text-rose-500">*</span>
+              </label>
+              <input type="date" id="dob" name="dob" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm text-slate-700">
+              <p class="text-xs text-rose-500 hidden mt-1" id="err-dob">يرجى تحديد تاريخ الميلاد</p>
+            </div>
+
+            <!-- Gender -->
+            <div>
+              <label class="block text-sm font-bold text-slate-700 mb-1.5">
+                الجنس <span class="text-rose-500">*</span>
+              </label>
+              <div class="grid grid-cols-2 gap-3">
+                <label class="flex items-center gap-2 p-2.5 border border-slate-300 rounded-xl cursor-pointer hover:bg-slate-50 transition">
+                  <input type="radio" name="gender" value="ذكر" checked class="text-brand-600 focus:ring-brand-500">
+                  <span class="text-sm font-medium text-slate-700">ذكر</span>
+                </label>
+                <label class="flex items-center gap-2 p-2.5 border border-slate-300 rounded-xl cursor-pointer hover:bg-slate-50 transition">
+                  <input type="radio" name="gender" value="أنثى" class="text-brand-600 focus:ring-brand-500">
+                  <span class="text-sm font-medium text-slate-700">أنثى</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Marital Status -->
+            <div>
+              <label for="maritalStatus" class="block text-sm font-bold text-slate-700 mb-1.5">
+                الحالة الاجتماعية
+              </label>
+              <select id="maritalStatus" name="maritalStatus" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm bg-white">
+                <option value="أعزب/عزباء">أعزب / عزباء</option>
+                <option value="متزوج/متزوجة">متزوج / متزوجة</option>
+                <option value="أخرى">أخرى</option>
+              </select>
+            </div>
+
+            <!-- Primary Phone -->
+            <div>
+              <label for="phone" class="block text-sm font-bold text-slate-700 mb-1.5">
+                رقم الهاتف الأساسي <span class="text-rose-500">*</span>
+              </label>
+              <input type="tel" id="phone" name="phone" required placeholder="059xxxxxxx أو 056xxxxxxx" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm">
+              <p class="text-xs text-rose-500 hidden mt-1" id="err-phone">يرجى كتابة رقم هاتف صالح للتواصل</p>
+            </div>
+
+            <!-- WhatsApp Phone -->
+            <div>
+              <label for="whatsapp" class="block text-sm font-bold text-slate-700 mb-1.5">
+                رقم الواتساب <span class="text-rose-500">*</span>
+              </label>
+              <input type="tel" id="whatsapp" name="whatsapp" required placeholder="059xxxxxxx" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm">
+              <p class="text-xs text-rose-500 hidden mt-1" id="err-whatsapp">يرجى إدخال رقم الواتساب المعتمد</p>
+            </div>
+
+            <!-- Email Address -->
+            <div>
+              <label for="email" class="block text-sm font-bold text-slate-700 mb-1.5">
+                البريد الإلكتروني <span class="text-rose-500">*</span>
+              </label>
+              <input type="email" id="email" name="email" required placeholder="user@example.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm text-left" dir="ltr">
+              <p class="text-xs text-rose-500 hidden mt-1" id="err-email">يرجى إدخال بريد إلكتروني صحيح</p>
+            </div>
+
+            <!-- Governorate / Region -->
+            <div>
+              <label for="governorate" class="block text-sm font-bold text-slate-700 mb-1.5">
+                المحافظة / المدينة <span class="text-rose-500">*</span>
+              </label>
+              <select id="governorate" name="governorate" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm bg-white">
+                <option value="">-- حدد المحافظة --</option>
+                <option value="غزة">غزة</option>
+                <option value="شمال غزة">شمال غزة</option>
+                <option value="دير البلح (الوسطى)">دير البلح (الوسطى)</option>
+                <option value="خان يونس">خان يونس</option>
+                <option value="رفح">رفح</option>
+                <option value="القدس">القدس</option>
+                <option value="رام الله والبيرة">رام الله والبيرة</option>
+                <option value="نابلس">نابلس</option>
+                <option value="الخليل">الخليل</option>
+                <option value="جنين">جنين</option>
+                <option value="بيت لحم">بيت لحم</option>
+                <option value="طولكرم">طولكرم</option>
+                <option value="قلقيلية">قلقيلية</option>
+                <option value="طوباس والأغوار">طوباس والأغوار</option>
+                <option value="سلفيت">سلفيت</option>
+                <option value="أريحا">أريحا</option>
+                <option value="منطقة أخرى">منطقة أخرى</option>
+              </select>
+              <p class="text-xs text-rose-500 hidden mt-1" id="err-governorate">يرجى اختيار المحافظة</p>
+            </div>
+
+            <!-- Address Line -->
+            <div class="md:col-span-2">
+              <label for="address" class="block text-sm font-bold text-slate-700 mb-1.5">
+                مكان السكن الحالي بالتفصيل <span class="text-rose-500">*</span>
+              </label>
+              <input type="text" id="address" name="address" required placeholder="الحي، الشارع، أقرب نقطة دالة أو معلم رئيسي" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm">
+              <p class="text-xs text-rose-500 hidden mt-1" id="err-address">يرجى كتابة تفاصيل العنوان الحالي</p>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex justify-end">
+            <button type="button" onclick="validateAndGoStep(1, 2)" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md shadow-brand-600/25 transition">
+              <span>المتابعة إلى المؤهلات والخبرات</span>
+              <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- ================= STEP 2: EDUCATION & EXPERIENCE ================= -->
+        <div id="stepSection2" class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200/90 shadow-sm space-y-6 hidden">
+          <div class="border-b border-slate-100 pb-4 flex items-center justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900 flex items-center gap-2">
+                <span class="w-2.5 h-6 bg-brand-600 rounded-full"></span>
+                الخطوة الثانية: المؤهلات الأكاديمية والخبرات المهنية
+              </h3>
+              <p class="text-xs text-slate-500 mt-1">سجّل الشهادات العلمية والخبرة الميدانية والإدارية</p>
+            </div>
+            <span class="text-xs bg-brand-50 text-brand-700 font-bold px-3 py-1 rounded-full border border-brand-200">مرحلة 2 من 4</span>
+          </div>
+
+          <!-- Academic Background -->
+          <div class="space-y-4">
+            <h4 class="text-xs font-black text-brand-900 uppercase tracking-wider flex items-center gap-2">
+              <svg class="w-4 h-4 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+              </svg>
+              المؤهل الأكاديمي الأساسي
+            </h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="degreeLevel" class="block text-sm font-bold text-slate-700 mb-1.5">
+                  الدرجة العلمية <span class="text-rose-500">*</span>
+                </label>
+                <select id="degreeLevel" name="degreeLevel" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm bg-white">
+                  <option value="">-- اختر الدرجة الأكاديمية --</option>
+                  <option value="دكتوراه">دكتوراه (PhD)</option>
+                  <option value="ماجستير">ماجستير (Master Degree)</option>
+                  <option value="دبلوم عالي">دبلوم عالي بعد البكالوريوس</option>
+                  <option value="بكالوريوس">بكالوريوس (Bachelor Degree)</option>
+                  <option value="دبلوم متوسط">دبلوم متوسط (سنتان)</option>
+                  <option value="ثانوية عامة">شهادة الثانوية العامة</option>
+                  <option value="دبلوم مهني / فني">شهادة تدريب مهني / تقني</option>
+                </select>
+                <p class="text-xs text-rose-500 hidden mt-1" id="err-degreeLevel">يرجى تحديد المؤهل العلمي</p>
+              </div>
+
+              <div>
+                <label for="major" class="block text-sm font-bold text-slate-700 mb-1.5">
+                  التخصص الدراسي <span class="text-rose-500">*</span>
+                </label>
+                <input type="text" id="major" name="major" required placeholder="مثال: هندسة، إدارة وتنمية، علوم مالية، تمريض، تدريب" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm">
+                <p class="text-xs text-rose-500 hidden mt-1" id="err-major">يرجى كتابة التخصص الدراسي</p>
+              </div>
+
+              <div>
+                <label for="university" class="block text-sm font-bold text-slate-700 mb-1.5">
+                  الجامعة / الكلية المانحة للشهادة <span class="text-rose-500">*</span>
+                </label>
+                <input type="text" id="university" name="university" required placeholder="اسم الجامعة أو المعهد" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm">
+                <p class="text-xs text-rose-500 hidden mt-1" id="err-university">يرجى ذكر اسم المؤسسة التعليمية</p>
+              </div>
+
+              <div>
+                <label for="gradYear" class="block text-sm font-bold text-slate-700 mb-1.5">
+                  سنة التخرج <span class="text-rose-500">*</span>
+                </label>
+                <input type="number" id="gradYear" name="gradYear" min="1980" max="2027" placeholder="مثال: 2022" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm">
+                <p class="text-xs text-rose-500 hidden mt-1" id="err-gradYear">يرجى إدخال سنة التخرج</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Work Background -->
+          <div class="space-y-4 pt-4 border-t border-slate-100">
+            <h4 class="text-xs font-black text-brand-900 uppercase tracking-wider flex items-center gap-2">
+              <svg class="w-4 h-4 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              الخبرات المهنية وسنوات الممارسة
+            </h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="expYears" class="block text-sm font-bold text-slate-700 mb-1.5">
+                  إجمالي سنوات الخبرة العملية <span class="text-rose-500">*</span>
+                </label>
+                <select id="expYears" name="expYears" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm bg-white">
+                  <option value="خريج جديد / أقل من عام">خريج جديد / أقل من عام</option>
+                  <option value="1 إلى 3 أعوام">1 إلى 3 أعوام</option>
+                  <option value="4 إلى 6 أعوام">4 إلى 6 أعوام</option>
+                  <option value="7 إلى 10 أعوام">7 إلى 10 أعوام</option>
+                  <option value="أكثر من 10 أعوام">أكثر من 10 أعوام</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="lastJob" class="block text-sm font-bold text-slate-700 mb-1.5">
+                  آخر مسمى وظيفي وجهة العمل
+                </label>
+                <input type="text" id="lastJob" name="lastJob" placeholder="مثال: منسق برامج تدريبية - جمعية الأمل" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm">
+              </div>
+
+              <div class="md:col-span-2">
+                <div class="flex items-center justify-between mb-1.5">
+                  <label for="expSummary" class="block text-sm font-bold text-slate-700">
+                    ملخص موجز لأبرز الإنجازات والمهام في خبراتك السابقة
+                  </label>
+                  <span id="expSummaryCount" class="text-xs text-slate-400">0 / 450 حرف</span>
+                </div>
+                <textarea id="expSummary" name="expSummary" rows="3" maxlength="450" placeholder="أوجز أهم المهام الميدانية أو الإدارية أو التدريبية التي قمت بها..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Language Proficiencies -->
+          <div class="space-y-4 pt-4 border-t border-slate-100">
+            <h4 class="text-xs font-black text-brand-900 uppercase tracking-wider flex items-center gap-2">
+              <svg class="w-4 h-4 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+              </svg>
+              اللغات والمهارات المساندة
+            </h4>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="arabicLevel" class="block text-sm font-bold text-slate-700 mb-1.5">
+                  مستوى اللغة العربية
+                </label>
+                <select id="arabicLevel" name="arabicLevel" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm bg-white">
+                  <option value="اللغة الأم (ممتاز)">اللغة الأم (ممتاز)</option>
+                  <option value="جيد جداً">جيد جداً</option>
+                  <option value="متوسط">متوسط</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="englishLevel" class="block text-sm font-bold text-slate-700 mb-1.5">
+                  مستوى اللغة الإنجليزية <span class="text-rose-500">*</span>
+                </label>
+                <select id="englishLevel" name="englishLevel" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm bg-white">
+                  <option value="مبتدئ">مبتدئ (Beginner)</option>
+                  <option value="متوسط">متوسط (Intermediate)</option>
+                  <option value="متقدم / طليق" selected>متقدم / طليق (Fluent / Advanced)</option>
+                  <option value="لغة أم">لغة أم (Native)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <button type="button" onclick="goToStep(1)" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold text-sm hover:bg-slate-50 transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+              <span>السابق</span>
+            </button>
+            <button type="button" onclick="validateAndGoStep(2, 3)" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md shadow-brand-600/25 transition">
+              <span>المتابعة إلى بيانات الوظيفة</span>
+              <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- ================= STEP 3: JOB DETAILS & MOTIVATION ================= -->
+        <div id="stepSection3" class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200/90 shadow-sm space-y-6 hidden">
+          <div class="border-b border-slate-100 pb-4 flex items-center justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900 flex items-center gap-2">
+                <span class="w-2.5 h-6 bg-brand-600 rounded-full"></span>
+                الخطوة الثالثة: بيانات الوظيفة الشاغرة والجاهزية
+              </h3>
+              <p class="text-xs text-slate-500 mt-1">تحديد المنصب المرشح له وتفضيلات التوظيف في مؤسسة أفق</p>
+            </div>
+            <span class="text-xs bg-brand-50 text-brand-700 font-bold px-3 py-1 rounded-full border border-brand-200">مرحلة 3 من 4</span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- Applied Position -->
+            <div class="md:col-span-2">
+              <label for="jobTitle" class="block text-sm font-bold text-slate-700 mb-1.5">
+                الوظيفة الشاغرة المتقدم إليها <span class="text-rose-500">*</span>
+              </label>
+              <select id="jobTitle" name="jobTitle" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm bg-white">
+                <option value="">-- اختر الوظيفة المناسبة لمؤهلاتك --</option>
+                <option value="مدير وحدة بناء القدرات والتدريب">مدير وحدة بناء القدرات والتدريب المجتمعي</option>
+                <option value="منسق مشاريع وتطوير مبادرات">منسق مشاريع وتطوير مبادرات تنموية</option>
+                <option value="مسؤول تمكين شبابي وتوجيه مهني">مسؤول تمكين شبابي وإرشاد وريادة أعمال</option>
+                <option value="مسؤول متابعة وتقييم وأثر مجتمعي (M&E)">مسؤول متابعة وتقييم وقياس الأثر (M&E)</option>
+                <option value="منسق ميداني وأنشطة مجتمعية">منسق ومتابع ميداني للأنشطة</option>
+                <option value="مسؤول علاقات عامة وشراكات مؤسسية">مسؤول علاقات عامة وشراكات وإعلام رقمي</option>
+                <option value="محاسب مالي وإداري">محاسب ومسؤول رقابة مالية</option>
+                <option value="مسؤول لوجستيات وإمداد">مسؤول لوجستيات وسلاسل إمداد</option>
+                <option value="طلب توظيف عام / قاعدة بيانات الكفاءات">طلب توظيف عام (إدراج في قاعدة بيانات المؤسسة)</option>
+              </select>
+              <p class="text-xs text-rose-500 hidden mt-1" id="err-jobTitle">يرجى تحديد الوظيفة المطلوبة</p>
+            </div>
+
+            <!-- Employment Preference -->
+            <div>
+              <label for="workType" class="block text-sm font-bold text-slate-700 mb-1.5">
+                نوع العمل المطلوب <span class="text-rose-500">*</span>
+              </label>
+              <select id="workType" name="workType" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm bg-white">
+                <option value="دوام كامل">دوام كامل (Full-Time)</option>
+                <option value="دوام جزئي">دوام جزئي (Part-Time)</option>
+                <option value="عمل عن بعد / حر">عمل عن بعد (Remote)</option>
+                <option value="عقد مشروع استشاري">عقد استشاري أو محدد المدة</option>
+                <option value="عمل تطوعي بمكافأة">عمل تطوعي بمكافأة رمزية</option>
+              </select>
+            </div>
+
+            <!-- Availability Date -->
+            <div>
+              <label for="availableDate" class="block text-sm font-bold text-slate-700 mb-1.5">
+                القدرة على مباشرة العمل <span class="text-rose-500">*</span>
+              </label>
+              <select id="availableDate" name="availableDate" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm bg-white">
+                <option value="فوري">مباشرة العمل فوراً</option>
+                <option value="خلال أسبوع">خلال أسبوع</option>
+                <option value="خلال أسبوعين">خلال أسبوعين</option>
+                <option value="خلال شهر">خلال شهر</option>
+              </select>
+            </div>
+
+            <!-- Expected Salary -->
+            <div>
+              <label for="salaryExpectation" class="block text-sm font-bold text-slate-700 mb-1.5">
+                الراتب التقديري المتوقع
+              </label>
+              <input type="text" id="salaryExpectation" name="salaryExpectation" placeholder="مثال: 650$ أو حسب سياسة المؤسسة" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm">
+            </div>
+
+            <!-- Driving License -->
+            <div>
+              <label for="drivingLicense" class="block text-sm font-bold text-slate-700 mb-1.5">
+                رخصة القيادة
+              </label>
+              <select id="drivingLicense" name="drivingLicense" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm bg-white">
+                <option value="لا أمتلك رخصة">لا أمتلك رخصة قيادة</option>
+                <option value="رخصة خاصة (سارية)">نعم، رخصة خاصة (سارية المفعول)</option>
+                <option value="رخصة عمومي / تجاري">نعم، رخصة تجارية أو عمومي</option>
+              </select>
+            </div>
+
+            <!-- Cover Letter / Motivation -->
+            <div class="md:col-span-2">
+              <div class="flex items-center justify-between mb-1.5">
+                <label for="coverLetter" class="block text-sm font-bold text-slate-700">
+                  رسالة الدافع: لماذا ترغب بالانضمام إلى مؤسسة أفق وما الذي ستضيفه لبرامجها؟ <span class="text-rose-500">*</span>
+                </label>
+                <span id="coverLetterCount" class="text-xs text-slate-400">0 / 600 حرف</span>
+              </div>
+              <textarea id="coverLetter" name="coverLetter" required rows="4" maxlength="600" placeholder="اكتب نبذة عن رغبتك بالانضمام وكيف تتطابق مهاراتك مع أهداف المؤسسة التنموية..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20 outline-none transition text-sm"></textarea>
+              <p class="text-xs text-rose-500 hidden mt-1" id="err-coverLetter">يرجى كتابة رسالة الدافع</p>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <button type="button" onclick="goToStep(2)" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold text-sm hover:bg-slate-50 transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+              <span>السابق</span>
+            </button>
+            <button type="button" onclick="validateAndGoStep(3, 4)" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md shadow-brand-600/25 transition">
+              <span>المتابعة إلى المرفقات والمراجعة</span>
+              <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- ================= STEP 4: ATTACHMENTS & REVIEW ================= -->
+        <div id="stepSection4" class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200/90 shadow-sm space-y-6 hidden">
+          <div class="border-b border-slate-100 pb-4 flex items-center justify-between">
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900 flex items-center gap-2">
+                <span class="w-2.5 h-6 bg-brand-600 rounded-full"></span>
+                الخطوة الرابعة: المرفقات والمراجع ومراجعة الطلب
+              </h3>
+              <p class="text-xs text-slate-500 mt-1">تأكيد رفع السيرة الذاتية ومراجعة ملخص بياناتك قبل الاعتماد النهائي</p>
+            </div>
+            <span class="text-xs bg-brand-50 text-brand-700 font-bold px-3 py-1 rounded-full border border-brand-200">مرحلة 4 من 4</span>
+          </div>
+
+          <!-- CV Dropzone -->
+          <div class="space-y-4">
+            <h4 class="text-sm font-bold text-slate-800 flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/>
+              </svg>
+              ملف السيرة الذاتية (CV) <span class="text-rose-500">*</span>
+            </h4>
+
+            <div class="border-2 border-dashed border-slate-300 hover:border-brand-500 rounded-2xl p-6 text-center transition bg-slate-50/60 cursor-pointer" id="dropZoneCv" onclick="document.getElementById('cvFile').click()">
+              <input type="file" id="cvFile" name="cvFile" accept=".pdf,.doc,.docx" class="hidden">
+              <div class="w-12 h-12 mx-auto rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center mb-3 shadow-inner">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                </svg>
+              </div>
+              <p class="text-sm font-bold text-slate-800">انقر هنا لتحديد ملف السيرة الذاتية من جهازك أو اسحبه إلى المربع</p>
+              <p class="text-xs text-slate-500 mt-1">الصيغ المقبولة: PDF أو Word (الحجم الأقصى: 5 ميغابايت)</p>
+
+              <!-- Uploaded Chip -->
+              <div id="fileInfoCv" class="hidden mt-4 inline-flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-brand-200 shadow-sm text-right">
+                <svg class="w-5 h-5 text-brand-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+                <div class="text-xs">
+                  <span id="fileNameCv" class="font-bold text-slate-800">cv_file.pdf</span>
+                  <span id="fileSizeCv" class="text-slate-500 block">1.5 MB</span>
+                </div>
+                <button type="button" id="removeCvBtn" class="text-slate-400 hover:text-rose-500 p-1">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <p class="text-xs text-rose-500 hidden" id="err-cvFile">يرجى إرفاق السيرة الذاتية لإتمام الطلب</p>
+          </div>
+
+          <!-- Professional References -->
+          <div class="space-y-4 pt-4 border-t border-slate-100">
+            <h4 class="text-sm font-bold text-slate-800 flex items-center gap-2">
+              <svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+              المعرفون المهنيون (أشخاص يمكن الرجوع إليهم للتزكية)
+            </h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                <span class="text-xs font-bold text-brand-900 block mb-2">المعرّف الأول (مسؤول سابق أو أكاديمي):</span>
+                <input type="text" id="ref1Name" placeholder="الاسم والمسمى والجهة" class="w-full mb-2 px-3 py-1.5 rounded-lg border border-slate-300 text-xs">
+                <input type="tel" id="ref1Phone" placeholder="رقم الهاتف للتواصل" class="w-full px-3 py-1.5 rounded-lg border border-slate-300 text-xs">
+              </div>
+              <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                <span class="text-xs font-bold text-brand-900 block mb-2">المعرّف الثاني:</span>
+                <input type="text" id="ref2Name" placeholder="الاسم والمسمى والجهة" class="w-full mb-2 px-3 py-1.5 rounded-lg border border-slate-300 text-xs">
+                <input type="tel" id="ref2Phone" placeholder="رقم الهاتف للتواصل" class="w-full px-3 py-1.5 rounded-lg border border-slate-300 text-xs">
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Summary Box -->
+          <div class="p-4 rounded-2xl bg-brand-50/70 border border-brand-200 space-y-2">
+            <h4 class="text-xs font-black text-brand-900 uppercase">ملخص الطلب السريع:</h4>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs text-slate-700">
+              <div><span class="text-slate-400 block">المتقدم:</span> <strong id="revName">-</strong></div>
+              <div><span class="text-slate-400 block">الوظيفة:</span> <strong id="revJob">-</strong></div>
+              <div><span class="text-slate-400 block">المؤهل:</span> <strong id="revDegree">-</strong></div>
+              <div><span class="text-slate-400 block">الهاتف:</span> <strong id="revPhone" dir="ltr">-</strong></div>
+            </div>
+          </div>
+
+          <!-- Declaration Agreement -->
+          <div class="space-y-3 pt-2">
+            <label class="flex items-start gap-3 cursor-pointer">
+              <input type="checkbox" id="declarationAck" name="declarationAck" required class="mt-1 w-4 h-4 text-brand-600 rounded border-slate-300 focus:ring-brand-500">
+              <span class="text-xs text-slate-700 leading-relaxed font-medium">
+                أقر بصفتي مقدماً لهذا الطلب بأن جميع البيانات والوثائق المدخلة صحيحة ومطابقة للواقع، وأتحمل المسؤولية في حال ثبوت خلاف ذلك، وأوافق على معالجة بياناتي لدى <strong>مؤسسة أفق للتنمية وبناء القدرات</strong> لأغراض التقييم والتوظيف.
+              </span>
+            </label>
+            <p class="text-xs text-rose-500 hidden" id="err-declarationAck">يجب الموافقة على الإقرار بصحة البيانات لإتمام التقديم</p>
+          </div>
+
+          <!-- Step 4 Navigation & Final Submit -->
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <button type="button" onclick="goToStep(3)" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold text-sm hover:bg-slate-50 transition">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+              <span>السابق</span>
+            </button>
+            <button type="submit" id="submitApplicationBtn" class="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-gradient-to-r from-brand-700 via-brand-800 to-brand-900 hover:from-brand-800 hover:to-brand-950 text-white font-extrabold text-sm shadow-lg shadow-brand-900/30 transition transform hover:-translate-y-0.5">
+              <svg class="w-5 h-5 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>إرسال طلب التوظيف واعتماده</span>
+            </button>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- Confirmation Card Upon Success -->
+      <div id="successCard" class="hidden bg-white rounded-3xl p-8 border border-slate-200 text-center space-y-6 shadow-2xl">
+        <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-3xl flex items-center justify-center mx-auto shadow-inner">
+          <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+
+        <div class="space-y-2">
+          <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-black border border-emerald-200">تم تسجيل طلبكم بنجاح</span>
+          <h3 class="text-2xl font-black text-slate-900">شكراً لاهتمامكم بالعمل مع مؤسسة أُفُق للتنمية</h3>
+          <p class="text-sm text-slate-600 max-w-lg mx-auto leading-relaxed">
+            تم استلام كافة البيانات والوثائق المرفقة بنجاح، وستقوم دائرة الموارد البشرية ولجنة الفرز بدراسة الطلب وفق معايير الكفاءة والشروط المعتمدة.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 max-w-md mx-auto text-center">
+          <p class="text-xs text-slate-500 mb-1">الرقم المرجعي الرسمي للطلب:</p>
+          <div class="flex items-center justify-center gap-3">
+            <span id="applicationRefCode" class="text-xl font-mono font-black text-brand-800 tracking-wider">OFUQ-2026-4819</span>
+            <button type="button" id="copyRefBtn" class="text-slate-400 hover:text-brand-600 p-1.5 rounded-lg border border-slate-200 bg-white" title="نسخ الرقم المرجعي">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <button type="button" id="printReceiptBtn" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 text-xs font-bold hover:bg-slate-50 transition">
+            <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+            </svg>
+            <span>طباعة إشعار الاستلام</span>
+          </button>
+          <button type="button" id="newApplicationBtn" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-brand-600 text-white text-xs font-bold hover:bg-brand-700 transition shadow">
+            <span>تقديم طلب جديد</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Toast Element -->
+  <div id="toastContainer" class="fixed bottom-4 left-4 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 mt-8 py-6 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto px-4 space-y-2">
+      <p class="font-extrabold text-slate-700">جميع الحقوق محفوظة © مؤسسة أفق للتنمية وبناء القدرات 2026</p>
+      <p>بوابة التوظيف الموحدة واستقطاب الكفاءات الشبابية والمجتمعية</p>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script>
+    let currentStep = 1;
+    let uploadedCvName = '';
+    let uploadedCvSize = '';
+    const STORAGE_KEY = 'ofuq_applications_db_v2';
+
+    function getStoredApplications() {
+      try {
+        const data = localStorage.getItem(STORAGE_KEY);
+        return data ? JSON.parse(data) : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function saveApplications(list) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      } catch (e) {
+        console.error('Storage save error:', e);
+      }
+    }
+
+    function showToast(message, type = 'info') {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      const bg = type === 'success' ? 'bg-emerald-600 text-white' : type === 'error' ? 'bg-rose-600 text-white' : 'bg-brand-900 text-white';
+      
+      toast.className = `${bg} px-4 py-2.5 rounded-2xl shadow-xl text-xs font-bold flex items-center gap-2 transform transition-all duration-300 translate-y-2 opacity-0 pointer-events-auto`;
+      toast.innerHTML = `
+        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <span>${message}</span>
+      `;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-2', 'opacity-0');
+      }, 10);
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 4000);
+    }
+
+    function updateStepperUI(step) {
+      currentStep = step;
+      const bar = document.getElementById('stepProgressBar');
+      const progressPercent = ((step - 1) / 3) * 100;
+      bar.style.width = progressPercent + '%';
+
+      for (let i = 1; i <= 4; i++) {
+        const icon = document.getElementById(`stepIcon${i}`);
+        const section = document.getElementById(`stepSection${i}`);
+
+        if (i < step) {
+          icon.className = 'w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-emerald-600 border-2 border-emerald-600 text-white shadow-sm transition';
+          icon.innerHTML = '✓';
+        } else if (i === step) {
+          icon.className = 'w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-brand-600 border-2 border-brand-600 text-white shadow-md shadow-brand-600/30 transition';
+          icon.innerText = i;
+        } else {
+          icon.className = 'w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-white border-2 border-slate-300 text-slate-500 shadow-sm transition';
+          icon.innerText = i;
+        }
+
+        if (section) {
+          if (i === step) {
+            section.classList.remove('hidden');
+          } else {
+            section.classList.add('hidden');
+          }
+        }
+      }
+
+      window.scrollTo({ top: 180, behavior: 'smooth' });
+    }
+
+    function goToStep(step) {
+      if (step < currentStep) {
+        updateStepperUI(step);
+      } else if (step > currentStep) {
+        validateAndGoStep(currentStep, step);
+      }
+    }
+
+    function validateStep(step) {
+      let isValid = true;
+
+      if (step === 1) {
+        const fullName = document.getElementById('fullName');
+        const nationalId = document.getElementById('nationalId');
+        const dob = document.getElementById('dob');
+        const phone = document.getElementById('phone');
+        const whatsapp = document.getElementById('whatsapp');
+        const email = document.getElementById('email');
+        const governorate = document.getElementById('governorate');
+        const address = document.getElementById('address');
+
+        if (!fullName.value.trim() || fullName.value.trim().split(/\s+/).length < 3) {
+          document.getElementById('err-fullName').classList.remove('hidden');
+          fullName.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-fullName').classList.add('hidden');
+          fullName.classList.remove('border-rose-500');
+        }
+
+        if (!nationalId.value.trim() || nationalId.value.trim().length < 7) {
+          document.getElementById('err-nationalId').classList.remove('hidden');
+          nationalId.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-nationalId').classList.add('hidden');
+          nationalId.classList.remove('border-rose-500');
+        }
+
+        if (!dob.value) {
+          document.getElementById('err-dob').classList.remove('hidden');
+          dob.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-dob').classList.add('hidden');
+          dob.classList.remove('border-rose-500');
+        }
+
+        if (!phone.value.trim() || phone.value.trim().length < 9) {
+          document.getElementById('err-phone').classList.remove('hidden');
+          phone.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-phone').classList.add('hidden');
+          phone.classList.remove('border-rose-500');
+        }
+
+        if (!whatsapp.value.trim()) {
+          document.getElementById('err-whatsapp').classList.remove('hidden');
+          whatsapp.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-whatsapp').classList.add('hidden');
+          whatsapp.classList.remove('border-rose-500');
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email.value.trim() || !emailRegex.test(email.value.trim())) {
+          document.getElementById('err-email').classList.remove('hidden');
+          email.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-email').classList.add('hidden');
+          email.classList.remove('border-rose-500');
+        }
+
+        if (!governorate.value) {
+          document.getElementById('err-governorate').classList.remove('hidden');
+          governorate.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-governorate').classList.add('hidden');
+          governorate.classList.remove('border-rose-500');
+        }
+
+        if (!address.value.trim()) {
+          document.getElementById('err-address').classList.remove('hidden');
+          address.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-address').classList.add('hidden');
+          address.classList.remove('border-rose-500');
+        }
+      }
+
+      if (step === 2) {
+        const degreeLevel = document.getElementById('degreeLevel');
+        const major = document.getElementById('major');
+        const university = document.getElementById('university');
+        const gradYear = document.getElementById('gradYear');
+
+        if (!degreeLevel.value) {
+          document.getElementById('err-degreeLevel').classList.remove('hidden');
+          degreeLevel.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-degreeLevel').classList.add('hidden');
+          degreeLevel.classList.remove('border-rose-500');
+        }
+
+        if (!major.value.trim()) {
+          document.getElementById('err-major').classList.remove('hidden');
+          major.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-major').classList.add('hidden');
+          major.classList.remove('border-rose-500');
+        }
+
+        if (!university.value.trim()) {
+          document.getElementById('err-university').classList.remove('hidden');
+          university.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-university').classList.add('hidden');
+          university.classList.remove('border-rose-500');
+        }
+
+        if (!gradYear.value || gradYear.value < 1980 || gradYear.value > 2027) {
+          document.getElementById('err-gradYear').classList.remove('hidden');
+          gradYear.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-gradYear').classList.add('hidden');
+          gradYear.classList.remove('border-rose-500');
+        }
+      }
+
+      if (step === 3) {
+        const jobTitle = document.getElementById('jobTitle');
+        const coverLetter = document.getElementById('coverLetter');
+
+        if (!jobTitle.value) {
+          document.getElementById('err-jobTitle').classList.remove('hidden');
+          jobTitle.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-jobTitle').classList.add('hidden');
+          jobTitle.classList.remove('border-rose-500');
+        }
+
+        if (!coverLetter.value.trim() || coverLetter.value.trim().length < 15) {
+          document.getElementById('err-coverLetter').classList.remove('hidden');
+          coverLetter.classList.add('border-rose-500');
+          isValid = false;
+        } else {
+          document.getElementById('err-coverLetter').classList.add('hidden');
+          coverLetter.classList.remove('border-rose-500');
+        }
+      }
+
+      if (step === 4) {
+        const declarationAck = document.getElementById('declarationAck');
+        if (!uploadedCvName) {
+          document.getElementById('err-cvFile').classList.remove('hidden');
+          isValid = false;
+        } else {
+          document.getElementById('err-cvFile').classList.add('hidden');
+        }
+
+        if (!declarationAck.checked) {
+          document.getElementById('err-declarationAck').classList.remove('hidden');
+          isValid = false;
+        } else {
+          document.getElementById('err-declarationAck').classList.add('hidden');
+        }
+      }
+
+      return isValid;
+    }
+
+    function validateAndGoStep(fromStep, toStep) {
+      if (validateStep(fromStep)) {
+        if (toStep === 4) {
+          document.getElementById('revName').innerText = document.getElementById('fullName').value.trim() || '-';
+          document.getElementById('revJob').innerText = document.getElementById('jobTitle').value || '-';
+          document.getElementById('revDegree').innerText = (document.getElementById('degreeLevel').value || '-') + ' (' + (document.getElementById('major').value || '') + ')';
+          document.getElementById('revPhone').innerText = document.getElementById('phone').value.trim() || '-';
+        }
+        updateStepperUI(toStep);
+      } else {
+        showToast('يرجى ملء الحقول الإلزامية المميزة باللون الأحمر', 'error');
+      }
+    }
+
+    const cvInput = document.getElementById('cvFile');
+    const fileInfoCv = document.getElementById('fileInfoCv');
+    const fileNameCv = document.getElementById('fileNameCv');
+    const fileSizeCv = document.getElementById('fileSizeCv');
+    const removeCvBtn = document.getElementById('removeCvBtn');
+
+    cvInput.addEventListener('change', function() {
+      if (this.files && this.files[0]) {
+        const file = this.files[0];
+        uploadedCvName = file.name;
+        uploadedCvSize = (file.size / (1024 * 1024)).toFixed(2) + ' MB';
+        fileNameCv.innerText = uploadedCvName;
+        fileSizeCv.innerText = uploadedCvSize;
+        fileInfoCv.classList.remove('hidden');
+        document.getElementById('err-cvFile').classList.add('hidden');
+        showToast('تم تحميل السيرة الذاتية بنجاح: ' + file.name, 'success');
+      }
+    });
+
+    removeCvBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      cvInput.value = '';
+      uploadedCvName = '';
+      uploadedCvSize = '';
+      fileInfoCv.classList.add('hidden');
+    });
+
+    const expSummary = document.getElementById('expSummary');
+    const expSummaryCount = document.getElementById('expSummaryCount');
+    expSummary.addEventListener('input', function() {
+      expSummaryCount.innerText = `${this.value.length} / 450 حرف`;
+    });
+
+    const coverLetter = document.getElementById('coverLetter');
+    const coverLetterCount = document.getElementById('coverLetterCount');
+    coverLetter.addEventListener('input', function() {
+      coverLetterCount.innerText = `${this.value.length} / 600 حرف`;
+    });
+
+    document.getElementById('employmentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      if (!validateStep(4)) {
+        showToast('يرجى إرفاق السيرة الذاتية والموافقة على الإقرار لإتمام الإرسال', 'error');
+        return;
+      }
+
+      const randomNum = Math.floor(1000 + Math.random() * 9000);
+      const appRefCode = `OFUQ-2026-${randomNum}`;
+
+      const record = {
+        refCode: appRefCode,
+        fullName: document.getElementById('fullName').value.trim(),
+        nationalId: document.getElementById('nationalId').value.trim(),
+        dob: document.getElementById('dob').value,
+        gender: document.querySelector('input[name="gender"]:checked') ? document.querySelector('input[name="gender"]:checked').value : 'غير محدد',
+        maritalStatus: document.getElementById('maritalStatus').value,
+        phone: document.getElementById('phone').value.trim(),
+        whatsapp: document.getElementById('whatsapp').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        governorate: document.getElementById('governorate').value,
+        address: document.getElementById('address').value.trim(),
+        degreeLevel: document.getElementById('degreeLevel').value,
+        major: document.getElementById('major').value.trim(),
+        university: document.getElementById('university').value.trim(),
+        gradYear: document.getElementById('gradYear').value,
+        expYears: document.getElementById('expYears').value,
+        lastJob: document.getElementById('lastJob').value.trim() || 'لا يوجد',
+        expSummary: document.getElementById('expSummary').value.trim(),
+        arabicLevel: document.getElementById('arabicLevel').value,
+        englishLevel: document.getElementById('englishLevel').value,
+        jobTitle: document.getElementById('jobTitle').value,
+        workType: document.getElementById('workType').value,
+        availableDate: document.getElementById('availableDate').value,
+        salaryExpectation: document.getElementById('salaryExpectation').value.trim() || 'وفق سلم الرواتب',
+        drivingLicense: document.getElementById('drivingLicense').value,
+        coverLetter: document.getElementById('coverLetter').value.trim(),
+        cvFileName: uploadedCvName || 'سيرة_ذاتية.pdf',
+        ref1: document.getElementById('ref1Name').value.trim() + ' (' + document.getElementById('ref1Phone').value.trim() + ')',
+        ref2: document.getElementById('ref2Name').value.trim() + ' (' + document.getElementById('ref2Phone').value.trim() + ')',
+        submittedAt: new Date().toLocaleDateString('ar-EG', { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })
+      };
+
+      const currentList = getStoredApplications();
+      currentList.unshift(record);
+      saveApplications(currentList);
+
+      document.getElementById('employmentForm').classList.add('hidden');
+      document.getElementById('stepProgressBar').parentElement.parentElement.classList.add('hidden');
+      document.getElementById('successCard').classList.remove('hidden');
+      document.getElementById('applicationRefCode').innerText = appRefCode;
+
+      showToast('تم اعتماد وإرسال طلب التوظيف بنجاح!', 'success');
+      window.scrollTo({ top: 100, behavior: 'smooth' });
+    });
+
+    document.getElementById('copyRefBtn').addEventListener('click', function() {
+      const code = document.getElementById('applicationRefCode').innerText;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(() => {
+          showToast('تم نسخ الرقم المرجعي بنجاح: ' + code, 'info');
+        }).catch(() => {
+          fallbackCopy(code);
+        });
+      } else {
+        fallbackCopy(code);
+      }
+    });
+
+    function fallbackCopy(text) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('تم نسخ الرقم المرجعي: ' + text, 'info');
+      } catch (err) {}
+      document.body.removeChild(ta);
+    }
+
+    document.getElementById('printReceiptBtn').addEventListener('click', function() {
+      window.print();
+    });
+
+    document.getElementById('newApplicationBtn').addEventListener('click', function() {
+      document.getElementById('employmentForm').reset();
+      cvInput.value = '';
+      uploadedCvName = '';
+      uploadedCvSize = '';
+      fileInfoCv.classList.add('hidden');
+      document.getElementById('successCard').classList.add('hidden');
+      document.getElementById('employmentForm').classList.remove('hidden');
+      document.getElementById('stepProgressBar').parentElement.parentElement.classList.remove('hidden');
+      updateStepperUI(1);
+    });
+
+  </script>
+</body>
+</html>
